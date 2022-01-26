@@ -10,7 +10,7 @@
 		EEDF257E27A1639200079FD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF257D27A1639200079FD0 /* AppDelegate.swift */; };
 		EEDF258027A1639200079FD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF257F27A1639200079FD0 /* SceneDelegate.swift */; };
 		EEDF258227A1639200079FD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF258127A1639200079FD0 /* ViewController.swift */; };
-		EEDF258527A1639200079FD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDF258327A1639200079FD0 /* Main.storyboard */; };
+		EEDF258527A1639200079FD0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDF258327A1639200079FD0 /* Login.storyboard */; };
 		EEDF258727A1639500079FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDF258627A1639500079FD0 /* Assets.xcassets */; };
 		EEDF258A27A1639500079FD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDF258827A1639500079FD0 /* LaunchScreen.storyboard */; };
 		EEDF259527A1639500079FD0 /* LevertyTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF259427A1639500079FD0 /* LevertyTestAppTests.swift */; };
@@ -23,6 +23,8 @@
 		EEDF25BD27A1666000079FD0 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25BC27A1666000079FD0 /* PhotoViewModel.swift */; };
 		EEDF25C327A166C000079FD0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25C227A166C000079FD0 /* LoginViewController.swift */; };
 		EEDF25C527A166CE00079FD0 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25C427A166CE00079FD0 /* PhotoViewController.swift */; };
+		EEDF25C727A1777D00079FD0 /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDF25C627A1777D00079FD0 /* Photo.storyboard */; };
+		EEDF25C927A179ED00079FD0 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25C827A179ED00079FD0 /* PhotoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,7 @@
 		EEDF257D27A1639200079FD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEDF257F27A1639200079FD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EEDF258127A1639200079FD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EEDF258427A1639200079FD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEDF258427A1639200079FD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		EEDF258627A1639500079FD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEDF258927A1639500079FD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEDF258B27A1639500079FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +65,8 @@
 		EEDF25BC27A1666000079FD0 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		EEDF25C227A166C000079FD0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EEDF25C427A166CE00079FD0 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		EEDF25C627A1777D00079FD0 /* Photo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Photo.storyboard; sourceTree = "<group>"; };
+		EEDF25C827A179ED00079FD0 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +125,6 @@
 				EEDF257D27A1639200079FD0 /* AppDelegate.swift */,
 				EEDF257F27A1639200079FD0 /* SceneDelegate.swift */,
 				EEDF258127A1639200079FD0 /* ViewController.swift */,
-				EEDF258327A1639200079FD0 /* Main.storyboard */,
 				EEDF258627A1639500079FD0 /* Assets.xcassets */,
 				EEDF258827A1639500079FD0 /* LaunchScreen.storyboard */,
 				EEDF258B27A1639500079FD0 /* Info.plist */,
@@ -224,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				EEDF25C227A166C000079FD0 /* LoginViewController.swift */,
+				EEDF258327A1639200079FD0 /* Login.storyboard */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -232,6 +236,8 @@
 			isa = PBXGroup;
 			children = (
 				EEDF25C427A166CE00079FD0 /* PhotoViewController.swift */,
+				EEDF25C627A1777D00079FD0 /* Photo.storyboard */,
+				EEDF25C827A179ED00079FD0 /* PhotoTableViewCell.swift */,
 			);
 			path = PhotoViewController;
 			sourceTree = "<group>";
@@ -341,8 +347,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEDF258A27A1639500079FD0 /* LaunchScreen.storyboard in Resources */,
+				EEDF25C727A1777D00079FD0 /* Photo.storyboard in Resources */,
 				EEDF258727A1639500079FD0 /* Assets.xcassets in Resources */,
-				EEDF258527A1639200079FD0 /* Main.storyboard in Resources */,
+				EEDF258527A1639200079FD0 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +384,7 @@
 				EEDF258027A1639200079FD0 /* SceneDelegate.swift in Sources */,
 				EEDF25BB27A1664A00079FD0 /* LoginViewModel.swift in Sources */,
 				EEDF25C527A166CE00079FD0 /* PhotoViewController.swift in Sources */,
+				EEDF25C927A179ED00079FD0 /* PhotoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,12 +421,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EEDF258327A1639200079FD0 /* Main.storyboard */ = {
+		EEDF258327A1639200079FD0 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EEDF258427A1639200079FD0 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		EEDF258827A1639500079FD0 /* LaunchScreen.storyboard */ = {
