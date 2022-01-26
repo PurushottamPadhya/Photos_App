@@ -16,6 +16,13 @@
 		EEDF259527A1639500079FD0 /* LevertyTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF259427A1639500079FD0 /* LevertyTestAppTests.swift */; };
 		EEDF259F27A1639500079FD0 /* LevertyTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF259E27A1639500079FD0 /* LevertyTestAppUITests.swift */; };
 		EEDF25A127A1639500079FD0 /* LevertyTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25A027A1639500079FD0 /* LevertyTestAppUITestsLaunchTests.swift */; };
+		EEDF25B327A165A800079FD0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25B227A165A800079FD0 /* NetworkService.swift */; };
+		EEDF25B727A1661300079FD0 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25B627A1661300079FD0 /* PhotoModel.swift */; };
+		EEDF25B927A1662700079FD0 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25B827A1662700079FD0 /* LoginModel.swift */; };
+		EEDF25BB27A1664A00079FD0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25BA27A1664A00079FD0 /* LoginViewModel.swift */; };
+		EEDF25BD27A1666000079FD0 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25BC27A1666000079FD0 /* PhotoViewModel.swift */; };
+		EEDF25C327A166C000079FD0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25C227A166C000079FD0 /* LoginViewController.swift */; };
+		EEDF25C527A166CE00079FD0 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25C427A166CE00079FD0 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		EEDF259A27A1639500079FD0 /* LevertyTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LevertyTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDF259E27A1639500079FD0 /* LevertyTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevertyTestAppUITests.swift; sourceTree = "<group>"; };
 		EEDF25A027A1639500079FD0 /* LevertyTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevertyTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EEDF25B227A165A800079FD0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EEDF25B627A1661300079FD0 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		EEDF25B827A1662700079FD0 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		EEDF25BA27A1664A00079FD0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EEDF25BC27A1666000079FD0 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		EEDF25C227A166C000079FD0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EEDF25C427A166CE00079FD0 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,11 @@
 		EEDF257C27A1639200079FD0 /* LevertyTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				EEDF25B127A1659400079FD0 /* Utils */,
+				EEDF25B027A1658200079FD0 /* NetworkService */,
+				EEDF25AF27A1657A00079FD0 /* ViewModel */,
+				EEDF25AE27A1657300079FD0 /* Model */,
+				EEDF25AD27A1656C00079FD0 /* View */,
 				EEDF257D27A1639200079FD0 /* AppDelegate.swift */,
 				EEDF257F27A1639200079FD0 /* SceneDelegate.swift */,
 				EEDF258127A1639200079FD0 /* ViewController.swift */,
@@ -125,6 +144,96 @@
 				EEDF25A027A1639500079FD0 /* LevertyTestAppUITestsLaunchTests.swift */,
 			);
 			path = LevertyTestAppUITests;
+			sourceTree = "<group>";
+		};
+		EEDF25AD27A1656C00079FD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF25C127A166AD00079FD0 /* PhotoViewController */,
+				EEDF25C027A166A300079FD0 /* LoginViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEDF25AE27A1657300079FD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF25B427A165F000079FD0 /* LoginModel */,
+				EEDF25B527A165FD00079FD0 /* PhotoModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EEDF25AF27A1657A00079FD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF25BF27A1667C00079FD0 /* PhotoViewModel */,
+				EEDF25BE27A1666E00079FD0 /* LoginViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEDF25B027A1658200079FD0 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF25B227A165A800079FD0 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		EEDF25B127A1659400079FD0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EEDF25B427A165F000079FD0 /* LoginModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF25B827A1662700079FD0 /* LoginModel.swift */,
+			);
+			path = LoginModel;
+			sourceTree = "<group>";
+		};
+		EEDF25B527A165FD00079FD0 /* PhotoModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF25B627A1661300079FD0 /* PhotoModel.swift */,
+			);
+			path = PhotoModel;
+			sourceTree = "<group>";
+		};
+		EEDF25BE27A1666E00079FD0 /* LoginViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF25BA27A1664A00079FD0 /* LoginViewModel.swift */,
+			);
+			path = LoginViewModel;
+			sourceTree = "<group>";
+		};
+		EEDF25BF27A1667C00079FD0 /* PhotoViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF25BC27A1666000079FD0 /* PhotoViewModel.swift */,
+			);
+			path = PhotoViewModel;
+			sourceTree = "<group>";
+		};
+		EEDF25C027A166A300079FD0 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF25C227A166C000079FD0 /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		EEDF25C127A166AD00079FD0 /* PhotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF25C427A166CE00079FD0 /* PhotoViewController.swift */,
+			);
+			path = PhotoViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +367,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDF25C327A166C000079FD0 /* LoginViewController.swift in Sources */,
 				EEDF258227A1639200079FD0 /* ViewController.swift in Sources */,
+				EEDF25B927A1662700079FD0 /* LoginModel.swift in Sources */,
 				EEDF257E27A1639200079FD0 /* AppDelegate.swift in Sources */,
+				EEDF25B327A165A800079FD0 /* NetworkService.swift in Sources */,
+				EEDF25B727A1661300079FD0 /* PhotoModel.swift in Sources */,
+				EEDF25BD27A1666000079FD0 /* PhotoViewModel.swift in Sources */,
 				EEDF258027A1639200079FD0 /* SceneDelegate.swift in Sources */,
+				EEDF25BB27A1664A00079FD0 /* LoginViewModel.swift in Sources */,
+				EEDF25C527A166CE00079FD0 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
