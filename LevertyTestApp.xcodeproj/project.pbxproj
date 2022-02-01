@@ -13,6 +13,9 @@
 		EE0DE60B27A81C5C008B625D /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE60A27A81C5C008B625D /* ImageViewExtension.swift */; };
 		EE0DE60D27A8A40E008B625D /* UIRefreshControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE60C27A8A40E008B625D /* UIRefreshControlExtension.swift */; };
 		EE0DE61227A8BECA008B625D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE61127A8BECA008B625D /* ColorExtension.swift */; };
+		EE0DE61527A91035008B625D /* ActivityIndicatorViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE61427A91034008B625D /* ActivityIndicatorViewExtension.swift */; };
+		EE0DE61927A91AAF008B625D /* PhotoViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE61827A91AAF008B625D /* PhotoViewModelTest.swift */; };
+		EE0DE61B27A91ABD008B625D /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE61A27A91ABD008B625D /* LoginViewModelTest.swift */; };
 		EEA667EF27A7396C007ACB58 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA667EE27A7396C007ACB58 /* LoginRouter.swift */; };
 		EEA667F127A73C97007ACB58 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA667F027A73C97007ACB58 /* Util.swift */; };
 		EEA667F427A73FCD007ACB58 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA667F327A73FCD007ACB58 /* ViewControllerExtension.swift */; };
@@ -59,6 +62,9 @@
 		EE0DE60A27A81C5C008B625D /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		EE0DE60C27A8A40E008B625D /* UIRefreshControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRefreshControlExtension.swift; sourceTree = "<group>"; };
 		EE0DE61127A8BECA008B625D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		EE0DE61427A91034008B625D /* ActivityIndicatorViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewExtension.swift; sourceTree = "<group>"; };
+		EE0DE61827A91AAF008B625D /* PhotoViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModelTest.swift; sourceTree = "<group>"; };
+		EE0DE61A27A91ABD008B625D /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
 		EEA667EE27A7396C007ACB58 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		EEA667F027A73C97007ACB58 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		EEA667F327A73FCD007ACB58 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -126,6 +132,22 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		EE0DE61627A91A7E008B625D /* LoginViewModelTest */ = {
+			isa = PBXGroup;
+			children = (
+				EE0DE61A27A91ABD008B625D /* LoginViewModelTest.swift */,
+			);
+			path = LoginViewModelTest;
+			sourceTree = "<group>";
+		};
+		EE0DE61727A91A89008B625D /* PhotoViewModelTest */ = {
+			isa = PBXGroup;
+			children = (
+				EE0DE61827A91AAF008B625D /* PhotoViewModelTest.swift */,
+			);
+			path = PhotoViewModelTest;
+			sourceTree = "<group>";
+		};
 		EEA667F227A73FB3007ACB58 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +155,7 @@
 				EE0DE60A27A81C5C008B625D /* ImageViewExtension.swift */,
 				EE0DE60C27A8A40E008B625D /* UIRefreshControlExtension.swift */,
 				EE0DE61127A8BECA008B625D /* ColorExtension.swift */,
+				EE0DE61427A91034008B625D /* ActivityIndicatorViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -180,6 +203,8 @@
 		EEDF259327A1639500079FD0 /* LevertyTestAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				EE0DE61727A91A89008B625D /* PhotoViewModelTest */,
+				EE0DE61627A91A7E008B625D /* LoginViewModelTest */,
 				EEDF259427A1639500079FD0 /* LevertyTestAppTests.swift */,
 			);
 			path = LevertyTestAppTests;
@@ -419,6 +444,7 @@
 				EEA667F427A73FCD007ACB58 /* ViewControllerExtension.swift in Sources */,
 				EEDF25B927A1662700079FD0 /* LoginModel.swift in Sources */,
 				EE0DE60B27A81C5C008B625D /* ImageViewExtension.swift in Sources */,
+				EE0DE61527A91035008B625D /* ActivityIndicatorViewExtension.swift in Sources */,
 				EE0DE61227A8BECA008B625D /* ColorExtension.swift in Sources */,
 				EE0DE60627A7CD87008B625D /* NetworkManager.swift in Sources */,
 				EEDF257E27A1639200079FD0 /* AppDelegate.swift in Sources */,
@@ -441,6 +467,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEDF259527A1639500079FD0 /* LevertyTestAppTests.swift in Sources */,
+				EE0DE61B27A91ABD008B625D /* LoginViewModelTest.swift in Sources */,
+				EE0DE61927A91AAF008B625D /* PhotoViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,17 +16,26 @@ class PhotoViewController: UIViewController{
     var refreshControl = UIRefreshControl()
     var isLoading = false
     var isSearching = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Photos"
+        self.title = "Photo"
+        self.view.backgroundColor = .appColor
         viewModel = PhotoViewModel()
-        viewModel.getPhotos()
+        self.getPhotos()
         setupView()
         apiResponseHandler()
+        
+    }
+    
+    func getPhotos(){
+        self.view.showLoader()
+        viewModel.getPhotos()
+            
     }
     
     func setupView(){
-        searchBar.tintColor = .appColor
+        searchBar.backgroundColor = .appColor
         searchBar.delegate = self
         
         refreshControl.addRefreshControl(tableView: photoTableView, message: "Loading...")
@@ -45,6 +54,7 @@ class PhotoViewController: UIViewController{
         viewModel.onSuccess = {[weak self] in
             guard let _self = self else {return}
             DispatchQueue.main.async {
+                _self.view.dismissLoader()
                 _self.isLoading = false
                 _self.refreshControl.endRefreshing()
                 _self.photoTableView.reloadData()

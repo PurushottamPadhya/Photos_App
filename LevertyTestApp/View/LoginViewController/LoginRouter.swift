@@ -9,6 +9,7 @@ import UIKit
 
 enum LoginRoute: String{
     case photo
+    case other
 }
 
 
@@ -19,18 +20,33 @@ class LoginRouter: Router {
         from context: UIViewController?,
         parameters:Any?
     ){
-        if let contx = context{
-            let storyboard = UIStoryboard.init(name: "Photo", bundle: nil)
-            if let photoVC = storyboard.instantiateViewController(withIdentifier: "photoVC") as? PhotoViewController{
-                contx.showDetailViewController(photoVC, sender: nil)
+        if let contx = context, contx is LoginViewController{
+            let route = LoginRoute(rawValue: routeID)
+            if route == .photo {
+                let storyboard = UIStoryboard.init(name: "Photo", bundle: nil)
+                if let photoVC = storyboard.instantiateViewController(withIdentifier: "photoVC") as? PhotoViewController{
+                    self.setRootVC(vc: photoVC)
+                }
+
+            }
+            else{
+                // handle other routing from login
             }
         }
+    }
+    
+    func setRootVC(vc: UIViewController){
         
-        
+        guard let window = UIApplication.shared.connectedScenes.first as? UIWindowScene else {return}
+
+        guard let sceneDelegate = window.delegate as? SceneDelegate else {
+            return
+        }
+        sceneDelegate.window?.rootViewController = vc
+
     }
 
 }
-
 
 
 

@@ -14,7 +14,7 @@ enum LoginStatus: String{
     case succed
     case failed
 }
-class LoginViewController: UIViewController, UITextFieldDelegate{
+class LoginViewController: UIViewController{
 
     var router: LoginRouter!
 
@@ -31,6 +31,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        self.title = "Levarti APP"
+        self.view.backgroundColor = .appColor
+        router = LoginRouter()
         viewModel = LoginViewModel()
         viewModel.loginModel.email = emailTextField.text
         viewModel.loginModel.password = passwordTextField.text
@@ -45,33 +48,38 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         emailTextField.delegate = self
         
     }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        loginButton.isUserInteractionEnabled = true
+    }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
+        view.endEditing(true)
         // take email and password via textfield
         // validate the email and password redirect to home or show error
         let (isFormValid, errorMessage) = viewModel.isEmailPasswordValid()
         if isFormValid{
             // once form is valid , login api is calling
             viewModel.userLoggedIn {
+                loginButton.isUserInteractionEnabled = false
 //                    self.router.navigate(to: .photo)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {[weak self] in
                     guard let _self = self else{return}
-                   
-                    let storyboard = UIStoryboard.init(name: "Photo", bundle: nil)
-                    if let photoVC = storyboard.instantiateViewController(withIdentifier: "photoVC") as? PhotoViewController{
-                        _self.navigationController?.pushViewController(photoVC, animated: true)
-                    }
+                    
+                    _self.router.route(to: LoginRoute.photo.rawValue, from: _self, parameters: nil)
+
                 }
             }
         }
         else{
+            self.loginButton.isUserInteractionEnabled = true
             self.showAlertView(title: "Login", msg:errorMessage ?? "Invalid Login")
         }
         
     }
 }
 //MARK:- UITextField Delegates
-extension LoginViewController: UITextViewDelegate{
+extension LoginViewController: UITextFieldDelegate{
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == emailTextField{
