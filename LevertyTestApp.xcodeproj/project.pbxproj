@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0DE60327A7CCB6008B625D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE60227A7CCB6008B625D /* Api.swift */; };
+		EE0DE60627A7CD87008B625D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE60527A7CD87008B625D /* NetworkManager.swift */; };
+		EE0DE60927A7FDB0008B625D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE60827A7FDB0008B625D /* Router.swift */; };
+		EE0DE60B27A81C5C008B625D /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE60A27A81C5C008B625D /* ImageViewExtension.swift */; };
+		EE0DE60D27A8A40E008B625D /* UIRefreshControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE60C27A8A40E008B625D /* UIRefreshControlExtension.swift */; };
+		EE0DE61227A8BECA008B625D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE61127A8BECA008B625D /* ColorExtension.swift */; };
+		EEA667EF27A7396C007ACB58 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA667EE27A7396C007ACB58 /* LoginRouter.swift */; };
+		EEA667F127A73C97007ACB58 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA667F027A73C97007ACB58 /* Util.swift */; };
+		EEA667F427A73FCD007ACB58 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA667F327A73FCD007ACB58 /* ViewControllerExtension.swift */; };
 		EEDF257E27A1639200079FD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF257D27A1639200079FD0 /* AppDelegate.swift */; };
 		EEDF258027A1639200079FD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF257F27A1639200079FD0 /* SceneDelegate.swift */; };
 		EEDF258227A1639200079FD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF258127A1639200079FD0 /* ViewController.swift */; };
-		EEDF258527A1639200079FD0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDF258327A1639200079FD0 /* Login.storyboard */; };
+		EEDF258527A1639200079FD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDF258327A1639200079FD0 /* Main.storyboard */; };
 		EEDF258727A1639500079FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDF258627A1639500079FD0 /* Assets.xcassets */; };
 		EEDF258A27A1639500079FD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDF258827A1639500079FD0 /* LaunchScreen.storyboard */; };
 		EEDF259527A1639500079FD0 /* LevertyTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF259427A1639500079FD0 /* LevertyTestAppTests.swift */; };
 		EEDF259F27A1639500079FD0 /* LevertyTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF259E27A1639500079FD0 /* LevertyTestAppUITests.swift */; };
 		EEDF25A127A1639500079FD0 /* LevertyTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25A027A1639500079FD0 /* LevertyTestAppUITestsLaunchTests.swift */; };
-		EEDF25B327A165A800079FD0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25B227A165A800079FD0 /* NetworkService.swift */; };
 		EEDF25B727A1661300079FD0 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25B627A1661300079FD0 /* PhotoModel.swift */; };
 		EEDF25B927A1662700079FD0 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25B827A1662700079FD0 /* LoginModel.swift */; };
 		EEDF25BB27A1664A00079FD0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF25BA27A1664A00079FD0 /* LoginViewModel.swift */; };
@@ -45,11 +53,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE0DE60227A7CCB6008B625D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		EE0DE60527A7CD87008B625D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EE0DE60827A7FDB0008B625D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EE0DE60A27A81C5C008B625D /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
+		EE0DE60C27A8A40E008B625D /* UIRefreshControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRefreshControlExtension.swift; sourceTree = "<group>"; };
+		EE0DE61127A8BECA008B625D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		EEA667EE27A7396C007ACB58 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		EEA667F027A73C97007ACB58 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		EEA667F327A73FCD007ACB58 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		EEDF257A27A1639200079FD0 /* LevertyTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevertyTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDF257D27A1639200079FD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEDF257F27A1639200079FD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EEDF258127A1639200079FD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EEDF258427A1639200079FD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		EEDF258427A1639200079FD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEDF258627A1639500079FD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEDF258927A1639500079FD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEDF258B27A1639500079FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +75,6 @@
 		EEDF259A27A1639500079FD0 /* LevertyTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LevertyTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDF259E27A1639500079FD0 /* LevertyTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevertyTestAppUITests.swift; sourceTree = "<group>"; };
 		EEDF25A027A1639500079FD0 /* LevertyTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevertyTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EEDF25B227A165A800079FD0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		EEDF25B627A1661300079FD0 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		EEDF25B827A1662700079FD0 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		EEDF25BA27A1664A00079FD0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -94,6 +110,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE0DE60427A7CD79008B625D /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE0DE60527A7CD87008B625D /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		EE0DE60727A7FD9F008B625D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EE0DE60827A7FDB0008B625D /* Router.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EEA667F227A73FB3007ACB58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EEA667F327A73FCD007ACB58 /* ViewControllerExtension.swift */,
+				EE0DE60A27A81C5C008B625D /* ImageViewExtension.swift */,
+				EE0DE60C27A8A40E008B625D /* UIRefreshControlExtension.swift */,
+				EE0DE61127A8BECA008B625D /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EEDF257127A1639200079FD0 = {
 			isa = PBXGroup;
 			children = (
@@ -117,8 +160,10 @@
 		EEDF257C27A1639200079FD0 /* LevertyTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				EE0DE60727A7FD9F008B625D /* Protocol */,
+				EE0DE60427A7CD79008B625D /* NetworkManager */,
+				EEA667F227A73FB3007ACB58 /* Extensions */,
 				EEDF25B127A1659400079FD0 /* Utils */,
-				EEDF25B027A1658200079FD0 /* NetworkService */,
 				EEDF25AF27A1657A00079FD0 /* ViewModel */,
 				EEDF25AE27A1657300079FD0 /* Model */,
 				EEDF25AD27A1656C00079FD0 /* View */,
@@ -176,17 +221,11 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		EEDF25B027A1658200079FD0 /* NetworkService */ = {
-			isa = PBXGroup;
-			children = (
-				EEDF25B227A165A800079FD0 /* NetworkService.swift */,
-			);
-			path = NetworkService;
-			sourceTree = "<group>";
-		};
 		EEDF25B127A1659400079FD0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EEA667F027A73C97007ACB58 /* Util.swift */,
+				EE0DE60227A7CCB6008B625D /* Api.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -227,7 +266,8 @@
 			isa = PBXGroup;
 			children = (
 				EEDF25C227A166C000079FD0 /* LoginViewController.swift */,
-				EEDF258327A1639200079FD0 /* Login.storyboard */,
+				EEDF258327A1639200079FD0 /* Main.storyboard */,
+				EEA667EE27A7396C007ACB58 /* LoginRouter.swift */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -349,7 +389,7 @@
 				EEDF258A27A1639500079FD0 /* LaunchScreen.storyboard in Resources */,
 				EEDF25C727A1777D00079FD0 /* Photo.storyboard in Resources */,
 				EEDF258727A1639500079FD0 /* Assets.xcassets in Resources */,
-				EEDF258527A1639200079FD0 /* Login.storyboard in Resources */,
+				EEDF258527A1639200079FD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,15 +416,23 @@
 			files = (
 				EEDF25C327A166C000079FD0 /* LoginViewController.swift in Sources */,
 				EEDF258227A1639200079FD0 /* ViewController.swift in Sources */,
+				EEA667F427A73FCD007ACB58 /* ViewControllerExtension.swift in Sources */,
 				EEDF25B927A1662700079FD0 /* LoginModel.swift in Sources */,
+				EE0DE60B27A81C5C008B625D /* ImageViewExtension.swift in Sources */,
+				EE0DE61227A8BECA008B625D /* ColorExtension.swift in Sources */,
+				EE0DE60627A7CD87008B625D /* NetworkManager.swift in Sources */,
 				EEDF257E27A1639200079FD0 /* AppDelegate.swift in Sources */,
-				EEDF25B327A165A800079FD0 /* NetworkService.swift in Sources */,
+				EE0DE60327A7CCB6008B625D /* Api.swift in Sources */,
+				EEA667EF27A7396C007ACB58 /* LoginRouter.swift in Sources */,
 				EEDF25B727A1661300079FD0 /* PhotoModel.swift in Sources */,
+				EE0DE60927A7FDB0008B625D /* Router.swift in Sources */,
+				EEA667F127A73C97007ACB58 /* Util.swift in Sources */,
 				EEDF25BD27A1666000079FD0 /* PhotoViewModel.swift in Sources */,
 				EEDF258027A1639200079FD0 /* SceneDelegate.swift in Sources */,
 				EEDF25BB27A1664A00079FD0 /* LoginViewModel.swift in Sources */,
 				EEDF25C527A166CE00079FD0 /* PhotoViewController.swift in Sources */,
 				EEDF25C927A179ED00079FD0 /* PhotoTableViewCell.swift in Sources */,
+				EE0DE60D27A8A40E008B625D /* UIRefreshControlExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,12 +469,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EEDF258327A1639200079FD0 /* Login.storyboard */ = {
+		EEDF258327A1639200079FD0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EEDF258427A1639200079FD0 /* Base */,
 			);
-			name = Login.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		EEDF258827A1639500079FD0 /* LaunchScreen.storyboard */ = {
