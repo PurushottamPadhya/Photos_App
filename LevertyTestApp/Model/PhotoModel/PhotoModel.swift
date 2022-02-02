@@ -18,7 +18,7 @@ class PhotoModel: Codable{
         case thumbnailURL = "thumbnailUrl"
     }
 
-    init(albumID: Int?, id: Int?, title: String?, url: String?, thumbnailURL: String?) {
+    required init(albumID: Int?, id: Int?, title: String?, url: String?, thumbnailURL: String?) {
         self.albumID = albumID
         self.id = id
         self.title = title

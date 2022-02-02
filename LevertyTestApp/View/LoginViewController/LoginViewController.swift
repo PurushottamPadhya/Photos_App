@@ -42,17 +42,21 @@ class LoginViewController: UIViewController{
     }
     
     func setup(){
+        // these values for testing purpose
 //        emailTextField.text = "a@gmail.com"
 //        passwordTextField.text = "12345678"
         passwordTextField.delegate = self
         emailTextField.delegate = self
         
     }
+    //MARK: - ViewDid Disapper
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         loginButton.isUserInteractionEnabled = true
     }
     
+    
+    //MARK : - Login button clicked handler
     @IBAction func loginButtonClicked(_ sender: Any) {
         view.endEditing(true)
         // take email and password via textfield
@@ -62,7 +66,6 @@ class LoginViewController: UIViewController{
             // once form is valid , login api is calling
             viewModel.userLoggedIn {
                 loginButton.isUserInteractionEnabled = false
-//                    self.router.navigate(to: .photo)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {[weak self] in
                     guard let _self = self else{return}
                     

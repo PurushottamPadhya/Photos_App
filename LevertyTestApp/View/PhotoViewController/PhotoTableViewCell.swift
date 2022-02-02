@@ -16,12 +16,13 @@ class PhotoTableViewCell: UITableViewCell{
         super.awakeFromNib()
         configureCell()
     }
-    
+    // Configuring table cell UI
     func configureCell(){
         self.backgroundColor = .cellBackGroundColor
         photoTitleLabel.textColor = .textTitleColor
     }
 
+    // Setting cell view data
     func setupCell(photo: PhotoModel){
         
         if let img = photo.thumbnailURL{

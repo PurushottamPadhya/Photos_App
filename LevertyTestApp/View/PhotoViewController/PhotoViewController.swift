@@ -17,23 +17,27 @@ class PhotoViewController: UIViewController{
     var isLoading = false
     var isSearching = false
 
+    //MARK: - View didload
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Photo"
         self.view.backgroundColor = .appColor
-        viewModel = PhotoViewModel()
+        viewModel = PhotoViewModel(photoManagerService: PhotoManagerImplementation())
         self.getPhotos()
         setupView()
         apiResponseHandler()
         
     }
     
+    //MARK: - API Called
     func getPhotos(){
         self.view.showLoader()
-        viewModel.getPhotos()
+        
+        viewModel.getAllPhoto()
             
     }
     
+    //MARK: - setup initial views
     func setupView(){
         searchBar.backgroundColor = .appColor
         searchBar.delegate = self
@@ -47,9 +51,10 @@ class PhotoViewController: UIViewController{
     }
     @objc func refresh(_ sender: Any){
         isLoading = true
-        viewModel.getPhotos()
+        viewModel.getAllPhoto()
     }
     
+    //MARK: - API response handler
     func apiResponseHandler(){
         viewModel.onSuccess = {[weak self] in
             guard let _self = self else {return}
@@ -68,6 +73,7 @@ class PhotoViewController: UIViewController{
     }
 }
 
+//MARK: - Table View delegate and data source
 extension PhotoViewController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -104,6 +110,8 @@ extension PhotoViewController : UITableViewDelegate, UITableViewDataSource{
         }
     }
 }
+
+//MARK: - UISearchBarDelegate 
 
 extension PhotoViewController: UISearchBarDelegate{
     

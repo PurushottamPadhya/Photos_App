@@ -12,23 +12,34 @@ class PhotoViewModel{
     var photo: [PhotoModel] = []
     var searchPhoto: [PhotoModel] = []
     var networkManager  = NetworkManager()
+    var onFailure: ((String)-> ())?
     var onSuccess: (()->())?
     var onDelete:((IndexPath)->())!
-    func getPhotos(){
-        networkManager.ApiRequest(url: Api.photoApi, expecting: [PhotoModel].self) {[weak self] result  in
-            switch result{
-            case .failure(let error):
-                print(error.localizedDescription)
-                
-            case .success(let photos):
-                self?.photo = photos
-                if let completion = self?.onSuccess {
+
+    var photoManagerService: PhotoManagerProtocol!
+    init(photoManagerService: PhotoManagerProtocol){
+        self.photoManagerService = photoManagerService
+    }
+    
+    func getAllPhoto(){
+        self.photoManagerService.getPhotoService(photoRequest: networkManager) { [weak self] photos, error in
+            guard let _self = self else {return}
+            if let err = error{
+                if let completion = self?.onFailure{
+                    completion(err.localizedDescription)
+                }
+            }
+            else if let responsePhotos = photos{
+                _self.photo = responsePhotos
+                if let completion = self?.onSuccess{
                     completion()
                 }
-                
             }
+            
         }
+        
     }
+  
     
     func deleteRowPhoto(at indexPath: IndexPath){
         photo.remove(at: indexPath.row)
