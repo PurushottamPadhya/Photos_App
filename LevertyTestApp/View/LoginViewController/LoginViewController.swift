@@ -23,6 +23,7 @@ class LoginViewController: UIViewController{
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
 
+    @IBOutlet weak var loginScrollView: UIScrollView!
     @IBOutlet weak var emailTextField: UITextField!
 //    var loginStatusBlock:(()->LoginStatus)
     
@@ -32,14 +33,22 @@ class LoginViewController: UIViewController{
         super.viewDidLoad()
         setup()
         self.title = "Levarti APP"
-        self.view.backgroundColor = .appColor
+        
+        
+        // setup keyboard event
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+//        self.view.backgroundColor = .appColor
         router = LoginRouter()
         viewModel = LoginViewModel()
         viewModel.loginModel.email = emailTextField.text
         viewModel.loginModel.password = passwordTextField.text
         
+        
 
     }
+                                      
     
     func setup(){
         // these values for testing purpose
@@ -80,6 +89,8 @@ class LoginViewController: UIViewController{
         }
         
     }
+    
+
 }
 //MARK:- UITextField Delegates
 extension LoginViewController: UITextFieldDelegate{
@@ -104,6 +115,26 @@ extension LoginViewController: UITextFieldDelegate{
         }
         return false
     }
+            
+    @objc func keyboardWillShow(notification:NSNotification){
+        let userInfo = notification.userInfo!
+        var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        keyboardFrame = self.view.convert(keyboardFrame, from: nil)
+        
+        var contentInset:UIEdgeInsets = self.loginScrollView.contentInset
+        contentInset.bottom = keyboardFrame.size.height
+        loginScrollView.contentInset = contentInset
+    }
+            
+    @objc func keyboardWillHide(notification:NSNotification){
+                
+        let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+        loginScrollView.contentInset = contentInset
+    }
     
     
 }
+
+                                               
+                                               
+                                        

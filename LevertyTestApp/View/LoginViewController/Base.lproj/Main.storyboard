@@ -11,7 +11,6 @@
         <!--Navigation Controller-->
         <scene sceneID="xaK-pI-GW4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qN7-hM-9Ur" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="U2H-cA-hPw" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JFi-4Q-vGH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -21,6 +20,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XP9-LE-EIC"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qN7-hM-9Ur" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1413" y="-7"/>
         </scene>
@@ -137,6 +137,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="UVp-Kv-w1c" id="9hH-4j-8Ie"/>
                         <outlet property="loginButton" destination="QKk-1e-HVe" id="xgv-34-kXJ"/>
+                        <outlet property="loginScrollView" destination="ano-3U-1vl" id="wZf-mq-rsZ"/>
                         <outlet property="passwordTextField" destination="lpQ-TU-jYz" id="VVl-rt-epg"/>
                     </connections>
                 </viewController>
